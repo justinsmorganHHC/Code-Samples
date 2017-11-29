@@ -1,0 +1,267 @@
+#loadproductinfocontainer {
+	display:none;
+}
+.return-container {
+        float: right
+    }
+
+    .section-divider {
+        height: 39px;
+        position: relative;
+		margin-bottom:30px;
+    }
+
+    .section-divider::after, .section-divider::before {
+        background: url(../images/bg-toxic-test-stripes.png) right top repeat-x;
+        content: "";
+        display: block;
+        height: 39px;
+        position: absolute;
+        top: 0;
+        width: 2200px
+    }
+
+    .section-divider::after {
+        margin-left: 28px;
+        left: 100%
+    }
+
+    .section-divider::before {
+        margin-right: 22px;
+        right: 100%
+    }
+
+    .section-divider-button {
+        background: #ff5000;
+        border: none;
+        color: #fff;
+        display: block;
+        font-family: Oswald, Arial, "Helvetica Neue", Helvetica, Verdana, sans-serif;
+        font-size: 16px;
+        height: 39px;
+        letter-spacing: .055em;
+        line-height: 39px;
+        padding: 0 55px 0 22px;
+        position: relative;
+        text-decoration: none;
+        text-transform: uppercase
+    }
+
+    .section-divider-button::after, .section-divider-button::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0
+    }
+
+    .section-divider-button::after {
+        border-right: 20px dotted transparent;
+        border-top: 39px solid #ff5000;
+        left: 100%
+    }
+
+    .section-divider-button::before {
+        border-bottom: 39px solid #ff5000;
+        border-left: 20px dotted transparent;
+        right: 100%
+    }
+
+    .return-close-icon {
+        font-size: 20px;
+        line-height: 24px;
+        position: absolute;
+        right: 20px;
+        top: 10px
+    }
+
+    .product-detail {
+        padding-bottom: 28px
+    }
+
+    .product-detail-image {
+        display: block;
+        margin: 0 auto
+    }
+
+    .suggested-replacements-container {
+        padding-top: 28px
+    }
+
+    .suggested-replacements-container a {
+        color: #f7941d
+    }
+
+    .suggested-replacements-container p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 0 28px
+    }
+	
+	.suggested-replacements img { max-width:100%; width: auto; height:auto; display: block; margin: 0 auto; }
+
+    .suggested-replacements-heading {
+        color: #ff5000;
+        font-size: 16px;
+        letter-spacing: .055em;
+        line-height: 22px;
+        margin: 0;
+        padding-bottom: 5px;
+        text-align: center;
+        text-transform: uppercase
+    }
+
+    .product-detail-row {
+        padding-top: 40px
+    }
+
+    .product-detail-name {
+        color: #ff5000;
+        font-family: Oswald, Arial, "Helvetica Neue", Helvetica, Verdana, sans-serif;
+        font-size: 38px;
+        letter-spacing: .055em;
+        line-height: 38px;
+        margin: 0 0 5px;
+        text-transform: uppercase
+    }
+
+    .product-detail-disclaimer, .product-detail-instructions {
+        font-size: 16px;
+        line-height: 22px
+    }
+
+    .product-detail-instructions {
+        margin: 0 0 28px
+    }
+
+    .product-detail-disclaimer {
+        margin: 0 0 35px
+    }
+
+    .toxic-table {
+        margin-bottom: 23px
+    }
+
+    .toxic-table-col-heading {
+        font-family: Oswald, Arial, "Helvetica Neue", Helvetica, Verdana, sans-serif;
+        font-size: 18px;
+        letter-spacing: .055em;
+        line-height: 22px;
+        padding-bottom: 18px;
+        text-align: left;
+        text-transform: uppercase
+    }
+
+    .toxic-table-col-heading: first-child {
+        padding-right: 28px
+    }
+
+    .ingredient-row {
+        border-top: 1px solid #ff5000
+    }
+
+    .ingredient-row: first-child {
+        border: none
+    }
+
+    .ingredient-row>td {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 5px
+    }
+
+    .ingredient-checkbox-col {
+        padding-left: 8px;
+        padding-right: 18px
+    }
+
+    .ingredient-name-col {
+        padding-top: 5px;
+        padding-right: 28px
+    }
+
+    .ingredient-concern-col {
+        padding-top: 5px;
+        padding-right: 8px
+    }
+
+    .ingredient-concern-source-list {
+        display: inline-block
+    }
+
+    .ingredient-concern-source-list-item {
+        display: inline-block;
+        margin-left: 8px
+    }
+
+    .ingredient-concern-source-link, .inline-concern-source-icon {
+        background: url(../images/icon-source-link.svg) 0 0 no-repeat;
+        background-size: 100%;
+        height: 11px;
+        width: 11px
+    }
+
+    .ingredient-concern-source-link {
+        display: block;
+        left: 0;
+        position: relative;
+        text-indent: -9999px;
+        top: 4px
+    }
+
+    .inline-concern-source-icon {
+        display: inline-block
+    }
+
+    .product-complete-container {
+        float: left
+    }
+
+    .product-complete-link {
+        padding: 0 22px
+    }
+
+    .product-complete-icon {
+        border-bottom: 8px dotted transparent;
+        border-left: 8px solid #fff;
+        border-top: 8px dotted transparent;
+        content: "";
+        display: inline-block;
+        margin-left: 8px
+    }
+
+    .section-subscribe {
+        background: #ff5000;
+        background: linear-gradient(to bottom, #fff 0, #fff 18%, #ffc20e 42%, #ffc20e 42%, #ff5000 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ff5000', GradientType=0);
+        margin-bottom: 228px;
+        position: relative
+    }
+
+    .section-subscribe.thank-you {
+        margin: 0;
+        overflow: hidden;
+        background: #ff5000;
+        background: linear-gradient(to bottom, #ffc20e 0, #ff5000 58%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffc20e', endColorstr='#ff5000', GradientType=0)
+    }
+
+    .section-subscribe>* {
+        position: relative;
+        z-index: 22
+    }
+
+    .safer-alternatives-row {
+        padding: 55px 0
+    }
+
+    .safer-alternatives {
+        color: #ff5000;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+        margin: 0
+    }
+	
+    .complete-sections-count {
+        color: #ffc20e
+    }

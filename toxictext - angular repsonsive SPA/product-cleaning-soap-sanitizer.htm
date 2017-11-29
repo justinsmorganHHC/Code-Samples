@@ -1,0 +1,162 @@
+
+  <div class="row product-detail-row ng-scope">
+    <div class="large-3 columns product-detail-icon-col"> <img class="product-detail-image" ng-src="images/product-cleaning-soap-sanitizer.png" src="images/product-cleaning-soap-sanitizer.png">
+      <div class="suggested-replacements-container">
+        <h4 class="suggested-replacements-heading">Buy Safer Products</h4>
+        <div class="suggested-replacements ng-binding" ng-bind-html="product.replacements">
+          <p>Look for products made with all-natural, organic and Ecocert ingredients at the organic section of your local grocery or local natural market. Or choose to shop online with Healthy Home Company and earn 10% cash rewards for referring others to do the same every time they buy!<br>
+            <br>
+            <a href="http://healthyhomecompany.com" target="_blank"><img src="images/replace_2.jpg" border="0"></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="large-8 columns end product-detail-col">
+      <h2 class="product-detail-name ng-binding" ng-bind="product.label">Cleaning Soap/Sanitizer</h2>
+      <p class="product-detail-instructions">Leading brands of <span class="product-detail-name-inline ng-binding" ng-bind="product.label.toLowerCase()">cleaning soap/sanitizer</span> contain the following chemicals. <br>
+        Refer to your specific product label to see which toxic chemicals it&nbsp;may&nbsp;contain:</p>
+      <table class="toxic-table">
+        <thead class="toxic-table-head">
+          <tr>
+            <th class="toxic-table-col-heading" colspan="2">Toxic Ingredients </th>
+            <th class="toxic-table-col-heading">Health Risks* </th>
+          </tr>
+        </thead>
+        <tbody class="toxic-table-body">
+          <!-- ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Fragrance" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product" checked="checked"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Fragrance</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Allergies, immunotoxicity and irritation to skin, eyes, or lungs </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://safecosmetics.org/downloads/NotSoSexy_report_May2010.pdf" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ncbi.nlm.nih.gov/pubmed/9577937" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.womensvoices.org/avoid-toxic-chemicals/fragrance/" target="_blank" class="ingredient-concern-source-link ng-binding">3</a> </li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="DMDM Hydantoin (Formaldehyde Releaser)" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product" checked="checked"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">DMDM Hydantoin (Formaldehyde Releaser)</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Irritation of skin and eyes and DNA effects</span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://www.ncbi.nlm.nih.gov/pubmed/3378426?dopt=Abstract" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ncbi.nlm.nih.gov/pubmed/15218738?dopt=Abstract" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ewg.org/skindeep/ingredient/702196/DMDM_HYDANTOIN/" target="_blank" class="ingredient-concern-source-link ng-binding">3</a></li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Triclosan" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product" checked="checked"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Triclosan</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Suspected endocrine disruptor and carcinogen </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://pubs.acs.org/doi/abs/10.1021/tx5000156" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ncbi.nlm.nih.gov/pubmed/24971846" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ncbi.nlm.nih.gov/pubmed/25404284" target="_blank" class="ingredient-concern-source-link ng-binding">3</a></li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Cocamide DEA" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Cocamide DEA</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Carcinogen and skin irritant</span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://www.ceh.org/news-events/press-releases/content/lawsuit-launched-testing-finds-cancer-causing-chemical-in-100-shampoos-haircare-products/" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://toxnet.nlm.nih.gov/cgi-bin/sis/search2/r?dbs+toxline:@term+@DOCNO+NIOSH/00217907" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://toxnet.nlm.nih.gov/cgi-bin/sis/search2/r?dbs+hsdb:@term+@DOCNO+4209" target="_blank" class="ingredient-concern-source-link ng-binding">3</a></li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Lilial" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Lilial</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Irritation to skin, allergies and endocrine disruptor </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://safecosmetics.org/downloads/NotSoSexy_report_May2010.pdf" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ncbi.nlm.nih.gov/pubmed/17577350" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ewg.org/skindeep/ingredient/700872/LILIAL/" target="_blank" class="ingredient-concern-source-link ng-binding">3</a> </li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="2-Bromo-2-Nitropropane-1,3-Diol" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">2-Bromo-2-Nitropropane-1,3-Diol</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Irritation to skin, eyes and lungs, organ system toxicity and allergies </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://www.medscape.com/viewarticle/725087_8" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://datasheets.scbt.com/sc-237926.pdf" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Methylisothiazolinone" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Methylisothiazolinone</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Skin irritation, allergies and respiratory effects </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://ec.europa.eu/health/scientific_committees/consumer_safety/docs/sccs_o_145.pdf" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.epa.gov/oppsrrd1/REDs/factsheets/3092fact.pdf" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Propylparaben" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Propylparaben</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Irritation of skin and eyes, endocrine disruptor, and developmental and reproductive effects</span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://safecosmetics.org/article.php?id=291" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://toxnet.nlm.nih.gov/cgi-bin/sis/search/a?dbs+hsdb:@term+@DOCNO+203" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.cdc.gov/biomonitoring/Parabens_BiomonitoringSummary.html" target="_blank" class="ingredient-concern-source-link ng-binding">3</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://healthandenvironmentonline.com/2013/06/17/parabens-endocrine-disruptors-in-cosmetics-and-food/" target="_blank" class="ingredient-concern-source-link ng-binding">4</a> </li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Propylene Glycol" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Propylene Glycol</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Irritation to skin and respiratory system </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://www.atsdr.cdc.gov/substances/toxsubstance.asp?toxid=240" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://toxnet.nlm.nih.gov/cgi-bin/sis/search2/r?dbs+hsdb:@term+@rn+@rel+57-55-6" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.toxipedia.org/display/toxipedia/Propylene+Glycol" target="_blank" class="ingredient-concern-source-link ng-binding">3</a> </li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+          <tr class="ingredient-row ng-scope" ng-repeat="ingredient in ingredients">
+            <td class="ingredient-checkbox-col"><input type="checkbox" class="ingredient-checkbox ng-isolate-scope ng-pristine ng-valid" name="Methylchloroisothiazolinone" ng-checked="ingredient.isPresent" ng-model="ingredient.isPresent" ingredient="ingredient" product="product"></td>
+            <td class="ingredient-name-col ng-binding" ng-bind="ingredient.label">Methylchloroisothiazolinone</td>
+            <td class="ingredient-concern-col"><span class="ingredient-concern ng-binding" ng-bind="ingredient.concern">Irritation to skin, eyes and respiratory system </span>
+              <ul class="ingredient-concern-source-list">
+                <!-- ngRepeat: source in ingredient.sources -->
+                <li class="ingredient-concern-source-list-item ng-scope" ng-repeat="source in ingredient.sources"><a href="http://online.personalcarecouncil.org/ctfa-static/online/lists/cir-pdfs/PR486.PDF" target="_blank" class="ingredient-concern-source-link ng-binding">1</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ncbi.nlm.nih.gov/pubmed/23474447" target="_blank" class="ingredient-concern-source-link ng-binding">2</a></li>
+                <li class="ingredient-concern-source-list-item ng-scope"><a href="http://www.ewg.org/skindeep/ingredient/703924/METHYLCHLOROISOTHIAZOLINONE/" target="_blank" class="ingredient-concern-source-link ng-binding">3</a></li>
+                <!-- end ngRepeat: source in ingredient.sources -->
+              </ul></td>
+          </tr>
+          <!-- end ngRepeat: ingredient in ingredients -->
+        </tbody>
+      </table>
+      <p class="product-detail-disclaimer">*Each one of these health risks is from a vetted, third-party resource. Please click on the <span class="inline-concern-source-icon"></span> icon next to each health concern to launch the corresponding&nbsp;study.</p>
+	</div>
+	<div class="large-1 columns end product-detail-col">
+		<a class="product-complete-link side-click ng-scope" ng-click="completeSection(product.label)" ui-sref="products.product.top({ uri: product.nextProduct.uri })" ng-if="product.nextProduct.uri" href="kitchen-cleaner"><img src="images/left-click.png" /></a>
+	</div>
+</div>

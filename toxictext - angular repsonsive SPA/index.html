@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+	<title>Take the Toxic Test</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=2">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container" id="site-header">
+  <div id="header">
+	<div class="row">
+		<div class="large-3 medium-3 columns text-center"> 
+			<div id="logo">
+				<img src="images/logo-toxic-test.png" alt="Toxic Test">
+			</div>
+		</div>
+		<div class="large-8 medium-8 columns">
+			<div id="header-title">
+				<h1>DANGER</h1>
+				<h3>The products in your home may contain toxic chemicals. Find out!</h3>
+				<h2>TAKE THE TOXIC TEST<sup>TM</sup></h2>
+			</div>
+		</div>
+		<div class="large-1 medium-1 columns hide-mobile">
+			<div id="scroll-arrow">
+				<img src="images/icon-scroll-down-arrow-anim.gif" alt="Scroll Down">
+			</div>
+		</div>
+	</div>
+  </div>
+  <!--end #header--> 
+</div>
+<!--end .container #site-header-->
+<div class="clear"></div>
+<div class="container" id="videos">
+  <div class="video-wrapper row">
+    <section class="videos large-3 small-6 columns">
+      <h3 class="did-you-know">DID YOU KNOW?</h3>
+      <a href="#"><img src="images/did-you-know-child.png" alt="Play Video" border="0"></a>
+      <p>Children are <strong>born with over 200 chemicals</strong> coursing through their veins.</p>
+    </section>
+    <section class="videos large-3 small-6 columns">
+      <h3 class="did-you-know">DID YOU KNOW?</h3>
+      <a href="#"><img src="images/did-you-know-danger.png" alt="Play Video" border="0"></a>
+      <p>There are over <strong>80,000 chemicals in use in the US alone</strong>, thousands of which are banned overseas. Of those, only a very small percentage is regulated at all.</p>
+    </section>
+    <section class="videos large-3 small-6 columns">
+      <h3 class="did-you-know">DID YOU KNOW?</h3>
+      <a href="#"><img src="images/did-you-know-cosmetics.png" alt="Play Video" border="0"></a>
+      <p>The cosmetics industry is <strong>self-regulated</strong> and very little legislation has been passed to protect women from chemicals in the products they use each day. In fact, over <strong>1,000 chemicals in makeup are banned in Europe alone.</strong></p>
+    </section>
+    <section class="videos large-3 small-6 columns">
+      <h3 class="did-you-know">DID YOU KNOW?</h3>
+      <a href="#"><img src="images/did-you-know-watch.png" alt="Play Video" border="0"></a>
+      <p>It only takes <strong>26 seconds for chemicals</strong> you use to clean your body and your home to </strong>enter your bloodstream through your skin.</strong></p>
+    </section>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--end .container #videos-->
+<div class="site-header-gradient"></div>
+<div class="container" id="toxic-ten">
+  <div id="toxic-ten-content">
+    <h2>THE TOXIC TEN</h2>
+    <p class="toxic-ten-description-top">Leading brands may contain the following toxic chemicals. If you have a leading brand in one of the Toxic 10 Categories below, click on it and it will be added to your overall score.</p>
+    <div class="products">
+      <ul class="product-list large-block-grid-5">
+        <!-- ngRepeat: product in products | filter: {sectionLocation: 'top'} -->
+        <li class="product-list-item ng-scope complete"> 
+			<a id="product-laundry-cleaner" data-next="cleaning-soap-sanitizer" class="product-link" href="#/product/laundry-cleaner" data="product-laundry-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img src="images/product-laundry-cleaner.png" width="91" height="196" class="product-image" ng-src="images/product-laundry-cleaner.png" border="0" > </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Laundry Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'top'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'top'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-cleaning-soap-sanitizer" data-next="kitchen-cleaner" class="product-link" ui-sref="products.product.top({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/cleaning-soap-sanitizer" data="product-cleaning-soap-sanitizer"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-cleaning-soap-sanitizer.png" src="images/product-cleaning-soap-sanitizer.png" border="0" > </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Cleaning Soap/Sanitizer</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'top'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'top'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-kitchen-cleaner" data-next="furniture-cleaner" class="product-link" ui-sref="products.product.top({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/kitchen-cleaner" data="product-kitchen-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-kitchen-cleaner.png" src="images/product-kitchen-cleaner.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Kitchen Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'top'} -->
+        <li class="product-list-item ng-scope complete" ng-repeat="product in products | filter: {sectionLocation: 'top'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-furniture-cleaner" data-next="toothpaste" class="product-link" ui-sref="products.product.top({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/furniture-cleaner" data="product-furniture-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-furniture-cleaner.png" src="images/product-furniture-cleaner.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Furniture Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'top'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'top'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-toothpaste" data-next="" class="product-link" ui-sref="products.product.top({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/toothpaste" data="product-toothpaste"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-tooth-paste.png" src="images/product-tooth-paste.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Toothpaste</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'top'} -->
+      </ul>
+	  <div class="clear hide-mobile"></div>
+      <ul class="product-list large-block-grid-5">
+        <!-- ngRepeat: product in products | filter: {sectionLocation: 'bottom'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'bottom'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-hair-body-cleaner" data-next="window-cleaner" class="second-row-first-product product-link" ui-sref="products.product.bottom({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/hair-body-cleaner" data="product-hair-body-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-hair-body-cleaner.png" src="images/product-hair-body-cleaner.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Hair and Body Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'bottom'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'bottom'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-window-cleaner" data-next="bathroom-cleaner" class="product-link" ui-sref="products.product.bottom({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/window-cleaner" data="product-window-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-window-cleaner.png" src="images/product-window-cleaner.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Window Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'bottom'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'bottom'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-bathroom-cleaner" data-next="deodorant" class="product-link" ui-sref="products.product.bottom({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/bathroom-cleaner" data="product-bathroom-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-bathroom-cleaner.png" src="images/product-bathroom-cleaner.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Bathroom Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'bottom'} -->
+        <li class="product-list-item ng-scope in-progress" ng-repeat="product in products | filter: {sectionLocation: 'bottom'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-deodorant" data-next="floor-cleaner" class="product-link" ui-sref="products.product.bottom({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/deodorant" data="product-deodorant"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-deodorant.png" src="images/product-deodorant.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Deodorant</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'bottom'} -->
+        <li class="product-list-item ng-scope begin-section" ng-repeat="product in products | filter: {sectionLocation: 'bottom'}" ng-class="{'begin-section': product.status === 'begin-section', 'in-progress': product.status === 'in-progress', 'complete': product.status === 'complete'}"> 
+			<a id="product-floor-cleaner" data-next="end" class="product-link" ui-sref="products.product.bottom({ uri: product.uri })" ng-click="product.status = 'in-progress'" href="#/product/floor-cleaner" data="product-floor-cleaner"><div class="product-overlay"></div>
+          <div class="product-image-container"> <img class="product-image" ng-src="images/product-floor-cleaner.png" src="images/product-floor-cleaner.png" border="0"> </div>
+          <div class="product-label ng-binding" ng-bind="product.label">Floor Cleaner</div>
+          </a> </li>
+        <!-- end ngRepeat: product in products | filter: {sectionLocation: 'bottom'} -->
+      </ul>
+	  <div class="clear"></div>
+      <div id="loadproductinfocontainer">
+        <div class="row return-row ng-scope">
+          <div class="large-12 columns">
+            <div class="return-container section-divider"> <a class="return-link section-divider-button" ui-sref="products" href="#/">Return to product list
+              <div class="return-close-icon">x</div>
+              </a> </div>
+          </div>
+        </div>
+        <div id="loadproductinfo"></div>
+        <div class="clear"></div>
+        <div class="product-complete-container section-divider">
+			<!-- ngIf: product.nextProduct.uri -->
+			<a class="product-complete-link section-divider-button ng-scope" ng-click="completeSection(product.label)" ui-sref="products.product.top({ uri: product.nextProduct.uri })" ng-if="product.nextProduct.uri" href="#" id="change-next-product-url">Click here to complete this section.
+			<div class="product-complete-icon"></div>
+			</a><!-- end ngIf: product.nextProduct.uri --> <!-- ngIf: !product.nextProduct.uri --> </div>
+      
+      </div>
+    </div>
+    <div class="clear"></div>
+    <p class="toxic-ten-description-bottom">Please consider purchasing safer alternatives. Making a series of small changes over time can have a lasting impact on the future health of your family and home.</p>
+  </div>
+</div>
+<!--end .container #toxic-ten-->
+<div class="container" id="sign-up">
+<div id="sign-up-wrapper">
+  <div class="form">
+    <h2>Sign up to download a free 60-page guide on ToxicFree&reg; living.</h2>
+    <!-- Begin MailChimp Signup Form -->
+    
+    <div class="mobile-half" id="mc_embed_signup">
+      <form action="//takethetoxictest.us9.list-manage.com/subscribe/post?u=dee9fde67b9061efc1a208aea&amp;id=2a7796bb77" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="indicates-required"><span class="note-asterisk">*</span> indicates required</div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address<span class="asterisk" id="input-asterisk">*</span></label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+
+            <div for="mce-EMAIL" class="mce_inline_error">This is a required field.</div>
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-FNAME">First Name </label>
+            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group">
+            <label for="mce-LNAME">Last Name </label>
+            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;">
+            <input type="text" name="b_dee9fde67b9061efc1a208aea_2a7796bb77" tabindex="-1" value="">
+          </div>
+          <div class="clear"></div>
+		  
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+          
+        </div>
+      </form>
+    </div>
+	<div class="show-mobile mobile-half">
+		<div class="take-the-test-div">
+			<img src="images/toxic-test-download-now.png" alt="Take the Test" /> 
+		</div>
+	</div>
+    <script type='text/javascript' src='js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> 
+    <!--End mc_embed_signup-->
+	<div class="clear"></div>
+	
+    <p><strong>Brought to you by The Healthy Home Company</strong></p>
+    <p>We want to make your home a healthier place to raise a family by helping you choose safer products to buy. We make finding products made with all-natural, organic and ToxicFree ingredients easy.  We make some of the safest, top-rated products affordable for you and your family, and our members earn a 10% cash reward on referrals to friends and family every time they buy!</p>
+  </div>
+  <div class="form-instructions">
+	<iframe src="//player.vimeo.com/video/114917582?title=0&amp;byline=0&amp;portrait=0" width="450" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<div class="hide-mobile">
+		<img src="images/toxic-test-download-now.png" alt="Take the Test" class="take-the-test"> 
+	</div>
+  </div>
+  
+</div>
+<!--end .container #sign-up-->
+
+<div id="score-popup" style="width:90%;height:90%;text-align:center;position:fixed;top:0px;z-index:201;display:none;"><a href="http://healthyhomecompany.com" target="_blank"><img src="images/score-0-overlay.png" id="popup-grade" style="width:auto;height:auto;max-height:100%;max-width:100%;" alt="" border="0"></a></div>
+<div class="container" id="score">
+  <div id="score-wrapper" class="hide-mobile">
+  
+    <div class="score-logo hide-mobile">
+		<img src="images/icon-hazard.7fc2d9fa.svg" alt="">
+	</div>
+	
+    <div class="score-information">
+		<img src="images/footer-grade-start.jpg" class="foot-grade" alt="">
+	</div>
+	
+    <div class="test-score hide-mobile">
+		<div id="test-score-points" class="test-score-points test-score-points-update ng-binding" ng-bind="points">?</div>
+		<div class="test-score-fraction"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="110px" viewBox="0 0 100 110" enable-background="new 0 0 100 110" xml:space="preserve">
+        <path class="icon-slash" fill-rule="evenodd" clip-rule="evenodd" fill="#FFC20E" d="M130.00002,0h15L15,153H0L130.00002,0z"></path>
+        </svg></div>
+		<div class="test-score-total">100</div>
+	</div>
+	
+	<div class="tests-taken"><span class="complete-sections-count ng-binding" ng-bind="completeSections">0</span> out of 10 tests taken<br>
+	<br>
+	<span class="tests-taken-text hide-mobile">To get your Healthy Home score please complete all of the Toxic Ten  sections.</span></div>
+	
+  </div>
+  <div class="show-mobile">
+	<div class="row">
+		<div class="small-4 columns text-center">
+			<strong><span class="test-score-points-update">?</span> / 100</strong>
+		</div>
+		<div class="small-8 columns">
+			<strong><span class="complete-sections-count ng-binding" ng-bind="completeSections">0</span> out of 10 tests taken</strong>
+		</div>
+	</div>
+	<div class="score-information">
+		<img src="images/footer-grade-start.jpg" class="foot-grade" alt="">
+	</div>
+  </div>
+  
+</div>
+<!--end .container #score-->
+<div class="container" id="footer-background"></div>
+<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/script.js?v=3"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-57788450-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
