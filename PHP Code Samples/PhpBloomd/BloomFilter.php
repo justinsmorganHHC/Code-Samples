@@ -41,3 +41,4 @@ class BloomFilter
 		throw new \Exception("BloomFilter->" . $name . ": not implemented or not allowed");
 	}
 }
+ 
