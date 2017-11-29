@@ -4,9 +4,9 @@
 * Page template for Mocade CMS GUI              *
 ************************************************/
 
-include ("/mocade/lib/db.php");
-include ("/mocade/lib/logger.php");
-include ("/mocade/lib/string_functions.php");
+include ("/mocades/lib/db.php");
+include ("/mocades/lib/logger.php");
+include ("/mocades/lib/string_functions.php");
 include (__DIR__."/header.php");
 
 
@@ -374,3 +374,4 @@ $mocade->close();
 include(__DIR__."/footer.php")
 
 ?>
+ 
