@@ -1,7 +1,7 @@
 <?php
 
-include ("/mocade/lib/db.php");
-include ("/mocade/lib/logger.php");
+include ("/company/lib/db.php");
+include ("/company/lib/logger.php");
 
 /************************************************
 * Download revenue data from Flex Marketing API *
