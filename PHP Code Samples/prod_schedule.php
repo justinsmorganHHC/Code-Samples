@@ -1,17 +1,17 @@
 <?php
 
 /************************************************
-* Page template for Mocade CMS GUI              *
+* Page template for Company CMS GUI              *
 ************************************************/
 
-include ("/mocades/lib/db.php");
-include ("/mocades/lib/logger.php");
-include ("/mocades/lib/string_functions.php");
+include ("/Companys/lib/db.php");
+include ("/Companys/lib/logger.php");
+include ("/Companys/lib/string_functions.php");
 include (__DIR__."/header.php");
 
 
-$interspire = interspire_db_connect();
-$mocade = mocade_db_connect();
+$inspire = inspire_db_connect();
+$Company = Company_db_connect();
 
 // only display things that match a search string
 $today = strtotime("today");
@@ -28,18 +28,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && $_POST['completeMail']) {
     $scheduled = $_POST['scheduled_drops'];
     $undelivered = $_POST['undelivered_volume'];
     $unsent = $_POST['unsent_drops'];
-    if ($mocade->query("SELECT 1 FROM mocade.kpis WHERE date = CURDATE();")->num_rows == 0) {
-        $mocade->query("INSERT mocade.kpis (date, global_active_unique_count, mailing_done, completed_drops, scheduled_drops, undelivered_volume, unsent_drops) 
+    if ($Company->query("SELECT 1 FROM Company.kpis WHERE date = CURDATE();")->num_rows == 0) {
+        $Company->query("INSERT Company.kpis (date, global_active_unique_count, mailing_done, completed_drops, scheduled_drops, undelivered_volume, unsent_drops) 
             VALUES (CURDATE(), 0, NOW(), {$completed}, {$scheduled}, {$undelivered}, '{$unsent}');");
     } else {
-        $mocade->query("UPDATE mocade.kpis SET mailing_done=NOW(), completed_drops={$completed}, scheduled_drops={$scheduled}, undelivered_volume={$undelivered}, unsent_drops='{$unsent}' WHERE date = CURDATE();");
+        $Company->query("UPDATE Company.kpis SET mailing_done=NOW(), completed_drops={$completed}, scheduled_drops={$scheduled}, undelivered_volume={$undelivered}, unsent_drops='{$unsent}' WHERE date = CURDATE();");
     }
-    echo $mocade->error;
+    echo $Company->error;
 }
 
-$show_complete_button = $mocade->query("SELECT * FROM mocade.kpis WHERE date=CURDATE() AND mailing_done IS NOT NULL;")->num_rows;
+$show_complete_button = $Company->query("SELECT * FROM Company.kpis WHERE date=CURDATE() AND mailing_done IS NOT NULL;")->num_rows;
 
-$test_lists = $interspire->query(
+$test_lists = $inspire->query(
    "SELECT DISTINCT SUBSTRING_INDEX(l.name, '_', 1) as code
     FROM i.email_lists l
     JOIN cfg.lists c ON c.listid = l.listid
@@ -52,7 +52,7 @@ $test_codes = array();
 while ($code = $test_lists->fetch_object())
     $test_codes[] = $code->code;
 
-$lists = $interspire->query(
+$lists = $inspire->query(
    "SELECT l.listid,
         l.name,
         l.subscribecount as size,
@@ -73,16 +73,16 @@ $lists = $interspire->query(
     ORDER BY 4, 7, 6;"
 );
 
-$segment_groups = $mocade->query("SELECT id, name FROM mocade.segment_groups;");
+$segment_groups = $Company->query("SELECT id, name FROM Company.segment_groups;");
 
-$range_rows = $mocade->query("SELECT * FROM ranges");
+$range_rows = $Company->query("SELECT * FROM ranges");
 
 $ranges = array();
 while ($row = $range_rows->fetch_object()) {
     $ranges[$row->id] = $row;
 }
 
-$job_rows = $interspire->query(
+$job_rows = $inspire->query(
    "SELECT *
     FROM injection.jobs
     WHERE scheduled BETWEEN {$start} AND {$end}
@@ -171,9 +171,9 @@ while ($list = $lists->fetch_object()) {
     $row_injecting = 0;
     $row_completed = 0;
 
-    $mailings = $mocade->query(
+    $mailings = $Company->query(
        "SELECT id, name, from_name, slot, schedule_date, segment_group_id
-        FROM mocade.mailings
+        FROM Company.mailings
         WHERE segment_id='{$list->listid}'
         AND name LIKE '%\_{$ymd}'
         AND (segment_group_id = {$list_group} OR {$list_group} = 0)
@@ -186,7 +186,7 @@ while ($list = $lists->fetch_object()) {
 
     $row = "<tr>";
     $row .= "<td style='width: 18%; text-align: center; vertical-align: middle;border-right:none'>";
-    $row .= "<a style='font-size: 1.25em; font-weight: bold;' href='interspire_list.php?l={$list->listid}'>{$list->name}</a><br>";
+    $row .= "<a style='font-size: 1.25em; font-weight: bold;' href='inspire_list.php?l={$list->listid}'>{$list->name}</a><br>";
     $row .= "ID: <b>{$list->listid}</b> ";
     $row .= "Size: <b>" . number_format($list->mailable, 0) . "</b>";
     $row .= "</td><td style='border-left:none;'>";
@@ -250,7 +250,7 @@ while ($list = $lists->fetch_object()) {
             $range = $ranges[$range_id];
             $range_name = $range->name;
 
-            $range_row = $interspire->query(
+            $range_row = $inspire->query(
                "SELECT s.friendly_from, s.from_alias, s.domain
                 FROM cfg.ip_range i
                 JOIN injection.range_juice_settings s ON s.range_id = i.id
@@ -340,8 +340,8 @@ while ($list = $lists->fetch_object()) {
 
 }
 
-$interspire->close();
-$mocade->close();
+$inspire->close();
+$Company->close();
 
 ?>
 </table>
