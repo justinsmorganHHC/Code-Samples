@@ -374,5 +374,3 @@ $Company->close();
 include(__DIR__."/footer.php")
 
 ?>
- 
- 
