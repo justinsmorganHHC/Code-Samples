@@ -1,0 +1,124 @@
+Justin Morgan 
+PHP Developer and Dev Ops Engineer 
+Jacksonville, FL 32210 
+Justin@justinsmorgan.com  
+904-419-3195 
+
+Summary 
+
+Sr. PHP Developer, Web Developer, Linux Full-Stack PHP Programmer, Remote Team Lead, Lead Engineer for 8 years
+DevOps Engineer, Sr. Systems Engineer, Sr. Network Engineer, Sysadmin, Network Admin, and Technology Consultant for 10 years
+Remote position preferred  
+Authorized to work in the US for any employer
+Code samples at https://www.github.com/justinsmorganHHC 
+
+Skills 
+
+Experience with scripting languages PHP, Bash, Perl, Python
+Strong hands-on Linux System Administration skills
+AWS/cloud architectures, API and command line tools
+Setup, Management, Optimization of AWS, IAM, EC2, DMS, RDS, EC2, SQS, VPC, Redshift, ElastiCache 
+Experience in data engineering AWS Data Pipeline
+Expert with MySQL MSSQL Redis database design and setup including replication and High Availability
+Expert with Messaging Systems Email, Exchange, PMTA, SES, SQS, SNS
+Continuous CI/CIT/CID integration, testing, and deployment Ansible, Rundeck, Jenkins
+Experience with the triage and troubleshooting of live production systems and applications
+Understanding of SDLC, software development processes, best practices, and methodologies including Agile, MVC, SOA
+Frameworks Symfony, Laravel, Codeignighter, Doctrine ORM, and Sliex Development
+Advanced experience programming with jQuery and JavaScript.
+Programming with version control systems including Git, Github, Subversion
+Developer for configuration management and system automation tools Docker, Puppet, Chef
+Familiarity with log aggregation systems Nagios, New Relic, Datadog
+
+Work Experience 
+
+Lead Engineer DevOps 
+Digital Media Solutions Group
+Remote, FL March 2016 to November 2017
+ 
+Working with National Email Provider sending 12 million emails per day. Had Split duties between DevOps and Development, 
+corrected problems with server and SMTP email sending and delivery using Power MTA a large commercial Mail package. 
+Created new features and upgraded older code in a mixed environment mostly Linux PHP code base but also Windows machines and ASP code.
+
+Developed full stack solutions
+Established coding standards and development process
+Maintained existing code and debugged when necessary
+Able to do responsive design and development
+Able to troubleshoot when problems arise
+Able to keep a high level of skills and knowledge
+Working knowledge of APIs, JSON, and web services
+Experience with MySQL and Apache and NGINX
+Working knowledge of Git for version control
+Working knowledge of Amazon Web Services AWS
+Experience with agile development and short sprints
+Ability to critically think and understand projects from business, customer and technical perspectives
+
+
+
+Senior PHP Developer 
+Healthy Home Company Inc. 
+Jacksonville, FL July 2014 to March 2016
+ 
+Maintain Existing Code Base and Developed new features. 
+Rackspace production servers, maintain custom PHP code base for websites and move code to CMS. 
+Code igniter Framework. PHP Programmer writing MLM Sales website back end and frontend code. 
+Expert knowledge of PHP and other programming languages. 
+Expert with MySQL database design and optimization 
+Advanced experience with jQuery and similar technologies. 
+Familiarity with revision control software 
+
+
+
+Full Stack PHP Developer 
+Ocenture LLC. 
+Jacksonville, FL August 2009 to July 2014
+ 
+PHP Developer coding with Eclipse for PHP, Code Igniter, Expression Engine 2.x Maria DB(MySQL). Full LAMP stack development
+Coded Perl and PHP scripts for backups, websites and workstations 
+Coded WordPress based website www.ocenture.com 
+Maintained an up-to-date and optimized LAMP environment.
+Worked with Dev team to deploy and maintain a web-based solution 
+Administered security for all internal and outsourced networks
+Managed an internal server environment that hosts Development, QA, IT Ticketing, Network Attached Storage, in both Linux and Windows 
+Managed Rackspace and Amazon AMI Remote Servers Wrote, revised, and verified Network and Configuration documentation 
+Participated in a Change Management targeting zero-defect results 
+Supported and maintained all hardware in both Windows and Linux configurations, Asterisk-based VOIP phone system and server. 
+
+Sr. DevOps Engineer 
+Beaver Street Fisheries Inc. 
+Jacksonville, FL December 2006 to August 2009 
+
+Implemented a full multi-year migration to new systems for all windows servers, including Domain Controllers.
+Custom NCR UNIX Warehouse Management System.  
+Barracuda Spam Firewall Implemented resulting in 90% spam reduction. 
+Fat Pipe T1 aggregator for increased bandwidth, DNS Management, Website server setup and maintenance. 
+Core member designing, supervising and enacting the H Chassis Blade center implementation and management of VMWare ESX, virtualization of Dell Servers. 
+Implemented Layer 3 Switching with Cisco 4948 Switches, optimization of Cisco Router and Dell Switching environment from 100 to Full Gigabit. 
+
+Technology Consultant 
+http://0-0x.com
+Jacksonville, FL August 2002 to Present
+
+AMAZON EC2, Amazon CloudFront, CloudFormation, S3, Amazon RDS, Amazon ELB, Amazon Auto Scaling, Amazon VPC, Route53, Amazon ECS, Beanstalk, Lambda, AWS Code Deploy. 
+Building WordPress hosting environments highly available and scalable in AWS/DigitalOcean/Google Cloud/Azure.
+
+Mobile apps / SaaS apps / WordPress / AWS / LAMP / Cpanel / Laravel. Helped dozens of clients migrate their web sites and applications towards Amazon AWS, Google Cloud Platform and Digital Ocean. 
+Technologies used: Nginx, CDN, Amazon VPC, Google Page Speed, Amazon Auto Scaling, Maria DB replication and more.
+
+Vulnerability Assessments, Hardening servers, security audits, Penetration testing, Virus/Malware/Threats/Vulnerabilities countermeasures, web security, fail2ban, Tripwire-AIDE-OSSEC, security, evasive, Denial of Services (DDOS) countermeasures, Firewalls
+
+Passionate to Automate Infrastructure as Code. Tools to perform my pipelines: Terraform / Docker, AWS ECS, Ansible, Chef, AWS CloudFormation, AWS Vagrant. 
+For Continuous Integration and Delivery: Jenkins, CircleCI, TravisCI, AWS Code Deploy, AWS Code Commit, AWS ECS and Web hooks.
+
+https://linkedin.com/in/justinsmorgan
+
+Make an online calendar appointment:
+https://calendly.com/justinsmorgan
+
+
+Education 
+BS in Computer Information Sciences 
+Charter University - Jacksonville, FL 
+June 1994 to November 2002 
+
+
