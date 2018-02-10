@@ -84,6 +84,7 @@ Managed Rackspace and Amazon AMI Remote Servers Wrote, revised, and verified N
 Participated in a Change Management targeting zero-defect results 
 Supported and maintained all hardware in both Windows and Linux configurations, Asterisk-based VOIP phone system and server. 
 
+
 Sr. DevOps Engineer 
 Beaver Street Fisheries Inc. 
 Jacksonville, FL December 2006 to August 2009 
@@ -94,6 +95,7 @@ Barracuda Spam Firewall Implemented resulting in 90% spam reduction. 
 Fat Pipe T1 aggregator for increased bandwidth, DNS Management, Website server setup and maintenance. 
 Core member designing, supervising and enacting the H Chassis Blade center implementation and management of VMWare ESX, virtualization of Dell Servers. 
 Implemented Layer 3 Switching with Cisco 4948 Switches, optimization of Cisco Router and Dell Switching environment from 100 to Full Gigabit. 
+
 
 Technology Consultant 
 http://0-0x.com
