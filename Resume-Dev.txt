@@ -12,6 +12,8 @@ Remote position preferred 
 Authorized to work in the US for any employer
 Code samples at https://www.github.com/justinsmorganHHC 
 
+Work History
+
 PHP Developer and DevOps Engineer
 justinsmorgan.com - Remote, FL Aug 2009 to Present
 
@@ -36,7 +38,9 @@ Familiarity with log aggregation systems Splunk, ELK Stack, Nagios, New Relic
 Expert with Messaging Systems Email, Exchange, PMTA, SES, SQS, SNS
 Experience with Continuous CI/CIT/CID integration, testing, Rundeck
 
-Example Projects: http://0-0x.com http://webtextmail.com
+Example Projects: 
+http://0-0x.com 
+http://webtextmail.com
 
 
 Lead Engineer DevOps 
