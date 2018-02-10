@@ -12,25 +12,32 @@ Remote position preferred 
 Authorized to work in the US for any employer
 Code samples at https://www.github.com/justinsmorganHHC 
 
-Skills 
+PHP Developer and DevOps Engineer
+justinsmorgan.com - Remote, FL Aug 2009 to Present
 
-Experience with scripting languages PHP, Bash, Perl, Python
-Strong hands-on Linux System Administration skills
-AWS/cloud architectures, API and command line tools
-Setup, Management, Optimization of AWS, IAM, EC2, DMS, RDS, EC2, SQS, VPC, Redshift, ElastiCache 
-Experience in data engineering AWS Data Pipeline
-Expert with MySQL MSSQL Redis database design and setup including replication and High Availability
-Expert with Messaging Systems Email, Exchange, PMTA, SES, SQS, SNS
-Continuous CI/CIT/CID integration, testing, and deployment Ansible, Rundeck, Jenkins
-Experience with the triage and troubleshooting of live production systems and applications
-Understanding of SDLC, software development processes, best practices, and methodologies including Agile, MVC, SOA
-Frameworks Symfony, Laravel, Codeignighter, Doctrine ORM, and Sliex Development
-Advanced experience programming with jQuery and JavaScript.
+Programming developer solutions leveraging Docker, Vagrant, AWS EC2
+Experience with scripting languages (Perl, Bash, PHP, Python)
+Understanding of software development processes, best practices
+Developer with responsive design, MVC architecture.
+Advanced experience programming with jQuery and similar technologies.
+Symfony Framework, Doctrine ORM, Skipper 13 and Sliex Development
+Familiarity with Agile practices and methodologies
 Programming with version control systems including Git, Github, Subversion
-Developer for configuration management and system automation tools Docker, Puppet, Chef
-Familiarity with log aggregation systems Nagios, New Relic, Datadog
+Experience with the triage of live production systems and applications
 
-Work Experience 
+DevOps Admin with AWS/cloud architectures, APIs and command line tools
+AWS, IAM, EC2, DMS, RDS, Aurora, SQS Message Queues, VPC, 
+Experience in data engineering AWS Data Pipeline, Apache Spark
+Expert with MySQL, MSSQL, Redis database design, replication
+Strong hands-on Linux System Administration skills
+Develop configuration management automation tools Puppet, Chef, Ansible
+Supporting analytics systems like Hive, Redshift, Presto, Tableau, Datadog
+Familiarity with log aggregation systems Splunk, ELK Stack, Nagios, New Relic
+Expert with Messaging Systems Email, Exchange, PMTA, SES, SQS, SNS
+Experience with Continuous CI/CIT/CID integration, testing, Rundeck
+
+Example Projects: http://0-0x.com http://webtextmail.com
+
 
 Lead Engineer DevOps 
 Digital Media Solutions Group
@@ -39,6 +46,8 @@ Remote, FL March 2016 to November 2017
 Working with National Email Provider sending 12 million emails per day. Had Split duties between DevOps and Development, 
 corrected problems with server and SMTP email sending and delivery using Power MTA a large commercial Mail package. 
 Created new features and upgraded older code in a mixed environment mostly Linux PHP code base but also Windows machines and ASP code.
+
+Wrote system to automate complex setup for PMTA configuration file to generate IP/CDIR and matching domain names in 3000 line, 1k+ files in Power MTA setups. Setup Monitoring System and Bash/PHP scripts to create XML hooks for monitoring servers and mail flow/counts. Automated DNS into MySQL using PDNS for backend so that website, email servers were setup from start to finish automated. Had infrastructure on Amazon EC2, SQS Que, transactional email to local servers at multiple nationwide ISP providers as well, truly distributed environment. Worked with AS/BGP, IP routing, SSL and GRE tunneling between providers.
 
 Developed full stack solutions
 Established coding standards and development process
@@ -53,11 +62,13 @@ Working knowledge of Amazon Web Services AWS
 Experience with agile development and short sprints
 Ability to critically think and understand projects from business, customer and technical perspectives
 
-
+Programming with  Full LAMP stack development with Linux, Apache, MySQL, and PHP 5.3.3 with Symfony 2, Ansible, JavaScript, Ajax, Angular.js, GitHub, Java, HTML5, JavaScript, jQuery, node.js, CSS3, Sass, SQL, Linux, Windows, IIS, NGINX/ Tomcat, worked with PHPStorm IDE and Sublime Text Editor. 
 
 Senior PHP Developer 
 Healthy Home Company Inc. 
 Jacksonville, FL July 2014 to March 2016
+
+Directed a department of 9, 4 Backend Developers, 3 Front End and 2 Graphics Designers. Took CEO requested features from Concept to Wireframe then to Code and Deployment for Brig Hart. Brig Hart is the worlds #1 Network Marketer. Managed a Portfolio of websites and businesses with Subscription, Marketing Publication and Live Conference products.
  
 Maintain Existing Code Base and Developed new features. 
 Rackspace production servers, maintain custom PHP code base for websites and move code to CMS. 
@@ -67,11 +78,13 @@ Expert with MySQL database design and optimization
 Advanced experience with jQuery and similar technologies. 
 Familiarity with revision control software 
 
-
+Programming with Expression Engine 2.x Maria DB(MySQL). Full LAMP stack development with Linux, Apache, MySQL, and PHP with Laravel, JavaScript, Ajax, Angular.js, GitHub, Bitbucket, Java, HTML5, JavaScript, jQuery, node.js, CSS3, Sass, SQL, Unix, Linux, Windows, IIS, Apache/Tomcat, worked with PHPStorm IDE and Sublime Text Editor. 
 
 Full Stack PHP Developer 
 Ocenture LLC. 
 Jacksonville, FL August 2009 to July 2014
+
+Software Company on Inc 500 List as 1st fastest in growth for Florida Ocenture develops subscription-based products and services for third party marketing organizations in the affinity marketing and the direct selling industry. Ocenture offers products in 5 vertical market segments (technology, identity theft, travel, roadside assistance insurance). Responsible for all internal, development, and production resources. 10+ servers at Rackspace, 13+ at Amazon, 10+ local Windows, 5+ Linux RHEL and Centos. User, Developer and 24-7 uptime responsibilities for 100+ production websites. 
  
 PHP Developer coding with Eclipse for PHP, Code Igniter, Expression Engine 2.x Maria DB(MySQL). Full LAMP stack development
 Coded Perl and PHP scripts for backups, websites and workstations 
@@ -85,21 +98,26 @@ Participated in a Change Management targeting zero-defect results 
 Supported and maintained all hardware in both Windows and Linux configurations, Asterisk-based VOIP phone system and server. 
 
 
+Programming with PHP Developer coding with Eclipse for PHP, Code Igniter, Expression Engine 2.x Maria DB(MySQL). 
+Full LAMP stack development with Linux, Apache, MySQL
+HTML, Flash, SOAP, CSS, AJAX, JavaScript, PHP, XML, XSL, Apache, MySQL, Oracle, Access and OOAD (OOP) 
+
+
 Sr. DevOps Engineer 
 Beaver Street Fisheries Inc. 
 Jacksonville, FL December 2006 to August 2009 
 
 Implemented a full multi-year migration to new systems for all windows servers, including Domain Controllers.
-Custom NCR UNIX Warehouse Management System.  
-Barracuda Spam Firewall Implemented resulting in 90% spam reduction. 
-Fat Pipe T1 aggregator for increased bandwidth, DNS Management, Website server setup and maintenance. 
-Core member designing, supervising and enacting the H Chassis Blade center implementation and management of VMWare ESX, virtualization of Dell Servers. 
-Implemented Layer 3 Switching with Cisco 4948 Switches, optimization of Cisco Router and Dell Switching environment from 100 to Full Gigabit. 
+Custom NCR UNIX Warehouse Management System.
+Barracuda Spam Firewall Implemented resulting in 90% spam reduction.
+Fat Pipe T1 aggregator for increased bandwidth, DNS Management, Website server setup and maintenance.
+Core member designing, supervising and enacting the H Chassis Blade center implementation and management of VMWare ESX, virtualization of Dell Servers.
+Implemented Layer 3 Switching with Cisco 4948 Switches, optimization of Cisco Router and Dell Switching environment from 100 to Full Gigabit.
 
 
 Technology Consultant 
 http://0-0x.com
-Jacksonville, FL August 2002 to Present
+Jacksonville, FL August 2002 to December 2006
 
 AMAZON EC2, Amazon CloudFront, CloudFormation, S3, Amazon RDS, Amazon ELB, Amazon Auto Scaling, Amazon VPC, Route53, Amazon ECS, Beanstalk, Lambda, AWS Code Deploy. 
 Building WordPress hosting environments highly available and scalable in AWS/DigitalOcean/Google Cloud/Azure.
